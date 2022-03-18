@@ -2,8 +2,9 @@
 
 // Task #1
 
-let admin = 'John';
+let admin = '';
 let name = 'John';
+admin = name ;
 alert (admin);
 
 // Task #2
@@ -12,7 +13,7 @@ let planetName = 'Kepler-452';
 let userName = prompt ('Как тебя звать,дружище?');
 alert (`Здоров, ${userName}, шо ты?`);
 
-// Task #3
+// // Task #3
 
 let calc = '10' + 10;
 console.log(calc);
