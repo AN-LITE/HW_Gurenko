@@ -2,14 +2,13 @@
 
 // Task #1 
 
-const user = {
-    // name :'John',
-    surname :'Smith'
+let user = {};
 
-};
+user.name = 'John';
+user.surname = 'Smith';
+user.name = 'Pete';
 
-user.name = 'Pete'
-alert (user.name);
+delete user.name;
 
 // Task #2
 
@@ -24,7 +23,7 @@ const user = {
 
 };
 
-// // это будет работать?
+// // это будет работать?`
 
 // ответ : да
 
@@ -35,12 +34,22 @@ user.name = "Pete";
 
 let salaries = {
 
-    John: 100,
+  John: 100,
   
-    Ann: 160,
+  Ann: 160,
   
-    Pete: 130
+  Pete: 130
   
-  }
+};
 
-  alert (salaries.John + salaries.Ann + salaries.Pete);
+let sum = 0;
+
+for (let key in salaries) {
+
+  sum += salaries[key];
+
+};
+
+alert (sum); 
+
+//  alert (salaries.John + salaries.Ann + salaries.Pete);
