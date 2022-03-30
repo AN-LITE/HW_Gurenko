@@ -50,7 +50,7 @@ switch (numOrStr) {
         console.log ('Empty String');
         break; 
 
-    case isNaN +numOrStr :
+    case isNaN( +numOrStr ) :
         console.log (' number is Ba_NaN')
         break; 
         
