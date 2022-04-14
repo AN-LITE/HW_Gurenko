@@ -9,18 +9,25 @@ let answer;
 
 function padString(str ,num , sym , bool = true){
 
-    if (typeof str !== 'string'){
+    if (typeof str !== 'string'|| str === ''){
         return console.log('some error in the str')
     }
 
-     if (typeof num !== isNaN (num)){
+     if (typeof num !== 'number' || num === ''){
         return console.log('some error in the num')
     }
     
-    if (typeof sym !== 'string' && sym.length > 1){
+    if (typeof sym !== 'string' && sym.length === 1){
         return console.log('some error in the sym')
+
+    } if(num < str.length){
+
+        answer = str.substr(0, num);
+
+        return console.log(answer);
     
     }else{
+
 
         let symLong = num - str.length;
 
@@ -42,10 +49,11 @@ function padString(str ,num , sym , bool = true){
 
     }
     
-
+    
 }
 
 padString (string, number, symbol, boolean);
 
-console.log (padString);
+// console.log (padString);
+
 
