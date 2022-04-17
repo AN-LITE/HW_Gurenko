@@ -1,47 +1,34 @@
-'use strict'
+// 'use strict'
 
-let a;
-let b;
+// function degree (callback){
 
-function degree (callback){
+//    const a = +prompt ('Введите число');
+//    const b = +prompt ('Введите степень');
 
-   a = +prompt ('Введите число');
-   b = +prompt ('Введите степень');
+//    return callback (a,b)
 
-   alert (`Число ${a} Cтепень ${b}`)
+// }
 
-   return callback (a,b)
+// function exponentiation (a,b){
 
-}
-
-function exponentiation (a,b){
+//    let result = a**b
 
 
-   let result;
+//    alert (result);
+// }
 
-   result = a**b
-
-
-   alert (result);
-}
-
-degree (exponentiation);
+// degree (exponentiation);
 
 
 
 // Доп. задание
 
 
-
-// let a;
-// let b;
-
 // function degree (callback){
 
-//    a = +prompt ('Введите число');
-//    b = +prompt ('Введите второе число');
+//    const a = +prompt ('Введите число');
+//    const b = +prompt ('Введите второе число');
 
-//    alert (` ${a} умножаем на ${b}`)
 
 //    return callback (a,b)
 
@@ -50,9 +37,8 @@ degree (exponentiation);
 
 // function multiplay (a,b){
 
-//    let result;
 
-//    result = a * b
+//    let result = a * b
 
 
 //    alert (result);
@@ -62,26 +48,20 @@ degree (exponentiation);
 
 
 
-// let a;
-// let b;
 
 // function degree (callback){
 
-//    a = +prompt ('Введите число');
-//    b = +prompt ('Введите второе число');
-
-//    alert (` ${a} делим на ${b}`)
+//    const a = +prompt ('Введите число');
+//    const b = +prompt ('Введите второе число');
 
 //    return callback (a,b)
 
 // }
 
-
 // function division (a,b){
 
-//    let result;
-
-//    result = a / b
+   
+//   let result = a / b
 
 
 //    alert (result);
@@ -90,15 +70,11 @@ degree (exponentiation);
 // degree (division);
 
 
-// let a;
-// let b;
 
 // function degree (callback){
 
-//    a = +prompt ('Введите число');
-//    b = +prompt ('Введите второе число');
-
-//    alert (` ${a} остаток от деления  ${b}`)
+//    const a = +prompt ('Введите число');
+//    const b = +prompt ('Введите второе число');
 
 //    return callback (a,b)
 
@@ -107,10 +83,7 @@ degree (exponentiation);
 
 // function modulo(a,b){
 
-//    let result;
-
-//    result = a %  b
-
+//    let result = a %  b
 
 //    alert (result);
 
