@@ -2,7 +2,7 @@
 
 void function () {
 
-    const tab = document.createElement('table');
+    const tab = document.querySelector('table');
     let step = 1;
 
     for(let i = 0; i < 10 ; i++){
@@ -17,7 +17,5 @@ void function () {
 
         tab.append(row)
     }
-
-    document.body.append(tab)
 
 }();
