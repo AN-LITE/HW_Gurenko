@@ -4,6 +4,7 @@ const addBtn = document.getElementById('btn_list');
 const setInput = document.getElementById('description_task');
 const toDoWrap = document.querySelector('.todos_wrapper');
 let tasks;
+let toDoItems = [];
 !localStorage.tasks ? tasks = [] : tasks =  JSON.parse(localStorage.getItem('tasks'));
 
 function task (description){
@@ -17,8 +18,14 @@ const createTemplate = (task, index) =>{
         <div class="description">${task.description}</div>
             <div class="wrapper_buttons">
 
-                <input class="btn_checkbox" type="checkbox" ${task.completed ? 'cheked' : "" }>
-                <button class="btn_delete">Delete</button>
+                <select class="todos_status">
+                <option disabled="Status">Status :</option>
+                <option value="no-status">No-status</option>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+                </select>
+
+                <button onclick="deleteTask ${task.index}" class="btn_delete">Delete</button>
             </div>   
     </div> 
     `
@@ -29,7 +36,8 @@ const fillTodo = () => {
     if(tasks.length > 0){
         tasks.forEach((item, index) => {
             toDoWrap.innerHTML += createTemplate(item, index);
-        })
+        });
+        toDoItems = document.querySelectorAll('todo_item')
     }
 }
 
@@ -43,4 +51,7 @@ addBtn.addEventListener('click', () =>{
     tasks.push(new task(setInput.value))
     localUp();
     fillTodo(); 
+    setInput.value = ''
 })
+
+

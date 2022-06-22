@@ -101,21 +101,20 @@ h2{
 }
 .todo_item .wrapper_buttons{
     display: flex;
-    justify-content: flex-end;
-    padding-left: 60px;
+    justify-content: flex-end;  
+    min-height: 32px;
 
 }
 
-.wrapper_buttons .btn_checkbox{
-    width: 55px;
-    height: 25px;
-    margin-right: 10px;
-    
+.wrapper_buttons .todos_status{
+    margin-right: 22px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
 }
 
 .wrapper_buttons .btn_delete {
 
-    width: 100%;
+    width: 75px;
     font-weight: bold;
     font-size: 15px;
     color:crimson;
