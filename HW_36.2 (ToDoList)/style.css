@@ -15,9 +15,11 @@ body {
 h1{
     text-align: center;
     margin-top: 75px;
+    animation: get_up 2s ease-in-out;
 }
 h2{
     margin-top: 70px;
+    animation: get_up 2s ease-in-out;
 }
 
 .list_wrapper{
@@ -128,4 +130,29 @@ h2{
     text-decoration: none;
     box-shadow:  0px 10px 13px -12px #de1e1e, 0px 0px 5px 3px #de1e1e; 
     box-shadow: 0px 10px 13px -12px #de1e1e, 0px 0px 5px 3px #de1e1e;
+}
+
+.todo_item.deletion{
+
+    animation: fade_in 0.7s ease-in-out;
+}
+
+@keyframes fade_in {
+
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes get_up {
+
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
