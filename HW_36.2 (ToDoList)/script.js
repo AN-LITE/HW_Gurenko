@@ -19,13 +19,13 @@ const createTemplate = (task, index) =>{
         <div class="description">${task.description}</div>
             <div class="wrapper_buttons">
 
-                <select class="todos_status" data-index="(${index})">
-                    <option value="no-status">No-status</option> 
-                    <option value="completed">Completed</option>
-                    <option value="pending">Pending</option>   
+                <select class="todos_status" data-index="${index}">
+                    <option value="no-status" ${task.status === "no-status" ? 'selected' : ''}>No-status</option> 
+                    <option value="completed" ${task.status === "completed" ? 'selected' : ''}>Completed</option>
+                    <option value="pending" ${task.status === "pending" ? 'selected' : ''}>Pending</option>   
                 </select>
                 
-                <button class="btn_delete" data-index="(${index})">Delete</button>
+                <button class="btn_delete" data-index="${index}">Delete</button>
             </div>   
     </div> 
     `
@@ -65,7 +65,7 @@ addBtn.addEventListener('click', () => {
 
 const deleteTask = index =>{
 
-    // toDoItems[index].classList.add('deletion');    
+    toDoItems[index].classList.add('deletion');    
         
     setTimeout(()=>{ 
         tasks.splice(index,1)
@@ -97,14 +97,12 @@ toDoWrap.addEventListener('change', event => {
     const data = structuredClone(tasks);
 
     if(!data.length) return;
+
     console.log(event.target.value);
 
-    // data[index].status = event.target.value
-
-    
+    data[index].status = event.target.value
     
     localUp(data);
 
-    
 });
 
