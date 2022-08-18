@@ -1,0 +1,118 @@
+
+body{
+
+    background: #5027B3;
+    background: -moz-linear-gradient(left, #5027B3 0%, #d0d3b4 50%, #5027B3 100%);
+    background: -webkit-linear-gradient(left, #5027B3 0%, #d5d9b6 50%, #5027B3 100%);
+    background: linear-gradient(to right, #5027B3 0%, #c2c69c 50%, #5027B3 100%);
+
+}
+
+h1{
+  text-align: center;
+  margin-top: 55px;
+  color: #000000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+
+
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.contact_form input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
+
+.btn_add{
+    padding: 15px;
+    color: aliceblue;
+    background-color: #1fc00c;
+    border-radius: 10px;
+    border: 4px solid transparent;
+
+}
+
+.search{
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
+.search_contact{
+    margin-bottom: 30px;
+}
+
+.btn_clear{
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    color: aliceblue;
+    background-color: #3852f1;
+}
+
+.search_select {
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
+
+.about_contact_form{
+    background-color: white  ;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
+
+.about_contact_form fieldset{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about_contact_btns{
+    margin: 5px auto;
+}
+
+.about_contact_btns button{
+
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    color: aliceblue;
+    background-color: #3852f1;
+}
+
+.about_contact_btns .about_contact_remove{
+    background-color: #dc0606;
+}
+
+ .about_contact_name{
+    margin-top: 15px;
+
+}
+
+
+
+label{
+    margin: 7px ;
+
+}
+.about_contact_form input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
